@@ -7,6 +7,7 @@ from langchain_core.output_parsers import StrOutputParser
 
 # load_dotenv()
 # api_key = os.getenv("OPENAI_API_KEY")
+api_key = st.secrets["OPENAI_API_KEY"]
 
 st.title("_AI 시인_ :sunglasses:")
 title = st.text_input("시의 주제를 입력하세요", "봄비")
